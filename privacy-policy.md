@@ -26,7 +26,7 @@ Solray works on your computer and nowhere else. It has no accounts, no ads and n
 - The separation model you imported for Stems, in %LOCALAPPDATA%\Solray Studio\Stems models. Remove it in the Stems section, or delete that folder.
 - Your settings: the tuning, sound and volume, the audio devices you picked (by their names), the folders you used, your recent sessions, the audio delays you measured, how long separations took on your devices, and the options you chose last. These and your last transcription are kept in %APPDATA%\com.codedusoleil\Solray Studio.
 
-None of this is sent anywhere. You can delete any of it at any time. Uninstalling Solray removes the app but leaves your sessions, exports, stems, imported model and settings where they are; delete those folders to remove them too.
+None of this is sent anywhere. You can delete any of it at any time. Uninstalling Solray removes the app but leaves your sessions, exports, and stems where they are; delete those folders to remove them too.
 
 ## What can leave your computer
 
