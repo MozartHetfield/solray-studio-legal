@@ -1,6 +1,6 @@
 # Solray Studio Privacy Policy
 
-Effective 21 October 2026. This policy covers Solray Studio 1.1.0 for Windows.
+Effective 23 October 2026. This policy covers Solray Studio 2.0.0 for Windows.
 
 ## Who makes Solray Studio
 
@@ -8,7 +8,7 @@ Solray Studio is a free app made by Code du Soleil. In this policy, "we" and "us
 
 ## The short version
 
-Solray works on your computer and nowhere else. It has no accounts, no ads and no analytics, and it never sends what you play, record, open, type or make over the internet. Solray gives us no information about you, and we collect, sell and share none.
+Solray works on your computer and nowhere else. It has no accounts, no ads and no analytics, and it never sends what you play, record, open, type or make over the internet. Solray gives us no information about you, and we collect, sell and share none. It downloads only one thing, and only when you ask it to: the training engine, when you press Install in Settings > Models (below).
 
 ## What Solray uses on your computer
 
@@ -24,8 +24,9 @@ Solray works on your computer and nowhere else. It has no accounts, no ads and n
 - Songs you export go where you choose, by default Music\Solray Studio. MIDI files you export go where you choose, by default Documents\Solray Studio\MIDIs.
 - Stems go to the folder you pick, by default Music\Solray Studio, with a copy of the song they were separated from.
 - Your last transcription in Tabs, with the location of the track it came from.
-- The models you import in Settings > Models: a separation model in %LOCALAPPDATA%\Solray Studio\Stems models, a lead and backing vocals model in %LOCALAPPDATA%\Solray Studio\Lead vocal models, and the voice models in %LOCALAPPDATA%\Solray Studio\Voice models. Remove them in Settings > Models, or delete those folders.
-- Voices you save in Voices: in Documents\Solray Studio\Voices, one folder per voice, holding its recordings, the words of its spoken takes and the language they are in, the results of Solray's checks of each take (levels, pitch range, noise), and whether you ticked that the person whose voice it is agreed to it.
+- The models you import in Settings > Models: a separation model in %LOCALAPPDATA%\Solray Studio\Stems models, a lead and backing vocals model in %LOCALAPPDATA%\Solray Studio\Lead vocal models, a reverb removal model in %LOCALAPPDATA%\Solray Studio\Reverb removal models, and the voice models in %LOCALAPPDATA%\Solray Studio\Voice models (where the training engine also puts the conversion base it makes). Remove them in Settings > Models, or delete those folders.
+- The training engine, when you install it: in %LOCALAPPDATA%\Solray Studio\Training engine (Python, PyTorch and the packages it needs, and the pretrained weights a training starts from). Remove it in Settings > Models, or delete that folder.
+- Voices you save in Voices: in Documents\Solray Studio\Voices, one folder per voice, holding its recordings, the words of its spoken takes and the language they are in, the results of Solray's checks of each take (levels, pitch range, noise), and, once you train it, its model (in its Model folder) and what the training worked with (in its Training folder: the recordings cut into pieces and what was heard in them; Free training files deletes it).
 - What Voices makes goes where you choose when you export it: by default into the voice's own folder, Conversions for vocals re-sung and Speech for text read aloud. Deleting the voice deletes those with it.
 - Your settings: the tuning, sound and volume, the audio devices you picked (by their names), the folders you used, your recent sessions, the audio delays you measured, how long separations took on your devices, and the options you chose last. These and your last transcription are kept in %APPDATA%\com.codedusoleil\Solray Studio.
 
@@ -33,9 +34,13 @@ None of this is sent anywhere. Solray keeps it until you delete it, which you ca
 
 ## Voices
 
-A recording of someone's voice is personal information about them. Solray asks you to confirm that the person whose voice it is agreed before it saves a voice, and uses the recordings only on your computer, to have Solray sing or speak in that voice when you ask it to. Copy only your own voice, or the voice of someone who has agreed to it.
+A recording of someone's voice is personal information about them. By saving a voice, you acknowledge that it is your own voice, or that you have the right to copy it as the person whose voice it is agreed to it. Solray uses the recordings only on your computer, to have Solray sing or speak in that voice when you ask it to. Training a voice runs on your computer, on its graphics card: its recordings never leave it. Copy and train only your own voice, or the voice of someone who has agreed to it.
 
-A voice never leaves your computer unless you export it into a file yourself (Export voice…), to take it to another computer. That file holds its recordings, so keep it as safe as the voice. A voice file you import from someone else is kept like your own, and the same care applies. Delete a voice in the Voices section, or delete its folder.
+A voice never leaves your computer unless you export it into a file yourself (Export voice…), to take it to another computer. That file holds its recordings and its trained model, so keep it as safe as the voice. A voice file you import from someone else is kept like your own, and the same care applies. Delete a voice in the Voices section, or delete its folder.
+
+## What Solray downloads
+
+Only the training engine, and only when you press Install (or Repair) in Settings > Models. It downloads uv and Python from github.com, PyTorch with NVIDIA's CUDA from download.pytorch.org, the trainer's other packages from pypi.org, and the pretrained weights from huggingface.co, and checks every file against the one it expects. When Python cannot be downloaded, it uses a Python 3.11 already installed on your computer instead. Files you give it with Import files… are copied from the folder you pick, and only the training engine's own files are taken from it: a file there is read only when it is the size of one of them, to compare its contents, and nothing else is kept or sent. As with any download, those sites see your IP address and the files asked for; Solray sends them nothing else, nothing about you, your voice or your files. Nothing is downloaded at any other time, and a training never connects to anything.
 
 ## What can leave your computer
 
