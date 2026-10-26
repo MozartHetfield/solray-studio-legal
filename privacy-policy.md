@@ -1,6 +1,6 @@
 # Solray Studio Privacy Policy
 
-Effective 23 October 2026. This policy covers Solray Studio 2.0.0 for Windows.
+Effective 26 October 2026. This policy covers Solray Studio 2.0.1 for Windows.
 
 ## Who makes Solray Studio
 
@@ -30,7 +30,9 @@ Solray works on your computer and nowhere else. It has no accounts, no ads and n
 - What Voices makes goes where you choose when you export it: by default into the voice's own folder, Conversions for vocals re-sung and Speech for text read aloud. Deleting the voice deletes those with it.
 - Your settings: the tuning, sound and volume, the audio devices you picked (by their names), the folders you used, your recent sessions, the audio delays you measured, how long separations took on your devices, and the options you chose last. These and your last transcription are kept in %APPDATA%\com.codedusoleil\Solray Studio.
 
-None of this is sent anywhere. Solray keeps it until you delete it, which you can do at any time. Uninstalling Solray removes the app but leaves your sessions, voices, exports, stems, imported models and settings where they are; delete those folders to remove them too.
+When Solray is installed from the Microsoft Store, Windows keeps the folders under %LOCALAPPDATA% and %APPDATA% above inside Solray's own package folder, %LOCALAPPDATA%\Packages\CodeduSoleil.SolrayStudio_5s0nx0cn6trmg.
+
+None of this is sent anywhere. Solray keeps it until you delete it, which you can do at any time. Uninstalling Solray removes the app but leaves your sessions, voices, exports and stems where they are; delete those folders to remove them too. Uninstalling the Microsoft Store version also removes its package folder, with the imported models, the training engine and your settings; uninstalling any other version leaves those too.
 
 ## Voices
 
