@@ -1,6 +1,6 @@
 # Solray Studio Privacy Policy
 
-Effective 26 October 2026. This policy covers Solray Studio 2.0.1 for Windows.
+Effective 27 October 2026. This policy covers Solray Studio 3.0.0 for Windows.
 
 ## Who makes Solray Studio
 
@@ -14,21 +14,22 @@ Solray works on your computer and nowhere else. It has no accounts, no ads and n
 
 - Your audio input: a microphone, an audio interface or another recording device you pick. Sessions, the Tuner, Challenges, Voices and the delay measurement in Settings listen to it while they are on screen; Sessions records from it when you press Record, and Voices when you record a take of your voice. What Solray hears is analysed in memory and then let go; only your recordings are kept, and only on your computer.
 - Your MIDI keyboard, when one is connected: the notes you play light up and sound in the Visualizer. They are not stored.
-- The files you open: audio files you import, separate, transcribe or convert, MIDI files, session folders, voice files, and the models you import in Settings. Solray reads them where they are. It copies them only into a session you save, a song into the folder its stems are written to, a voice file into the Voices folder, and an imported model into its own folder (below).
+- The files you open: audio files you import, separate, transcribe or convert, MIDI files, videos and Guitar Pro scores, session folders, voice files, and the models you import in Settings. Solray reads them where they are. It copies them only into a session you save, a song into the folder its stems are written to, a voice file into the Voices folder, and an imported model into its own folder (below).
 - What you type: names for sessions, tracks and voices, the words of a spoken take of your voice, and the text you have Solray read aloud in Voices. The text read aloud is not kept: only the speech made from it, and only when you export it.
 - The names of your audio and MIDI devices, graphics cards and processor, to list them and to choose where Stems and Voices run. They stay on your computer.
 
 ## What Solray keeps on your computer
 
 - Sessions you save, with their recordings: in Documents\Solray Studio\Sessions, unless you save them somewhere else.
-- Songs you export go where you choose, by default Music\Solray Studio. MIDI files you export go where you choose, by default Documents\Solray Studio\MIDIs.
+- Songs you export go where you choose, by default Music\Solray Studio. MIDI files you export go where you choose, by default Documents\Solray Studio\MIDIs. Videos you export go where you choose, by default Documents\Solray Studio\Videos.
 - Stems go to the folder you pick, by default Music\Solray Studio, with a copy of the song they were separated from.
 - Your last transcription in Tabs, with the location of the track it came from.
+- Your last project in Videos: the locations of its video, recording and score, how they are lined up, and how the tab is drawn.
 - The models you import in Settings > Models: a separation model in %LOCALAPPDATA%\Solray Studio\Stems models, a lead and backing vocals model in %LOCALAPPDATA%\Solray Studio\Lead vocal models, a reverb removal model in %LOCALAPPDATA%\Solray Studio\Reverb removal models, and the voice models in %LOCALAPPDATA%\Solray Studio\Voice models (where the training engine also puts the conversion base it makes). Remove them in Settings > Models, or delete those folders.
 - The training engine, when you install it: in %LOCALAPPDATA%\Solray Studio\Training engine (Python, PyTorch and the packages it needs, and the pretrained weights a training starts from). Remove it in Settings > Models, or delete that folder.
 - Voices you save in Voices: in Documents\Solray Studio\Voices, one folder per voice, holding its recordings, the words of its spoken takes and the language they are in, the results of Solray's checks of each take (levels, pitch range, noise), and, once you train it, its model (in its Model folder) and what the training worked with (in its Training folder: the recordings cut into pieces and what was heard in them; Free training files deletes it).
 - What Voices makes goes where you choose when you export it: by default into the voice's own folder, Conversions for vocals re-sung and Speech for text read aloud. Deleting the voice deletes those with it.
-- Your settings: the tuning, sound and volume, the audio devices you picked (by their names), the folders you used, your recent sessions, the audio delays you measured, how long separations took on your devices, and the options you chose last. These and your last transcription are kept in %APPDATA%\com.codedusoleil\Solray Studio.
+- Your settings: the tuning, sound and volume, the audio devices you picked (by their names), the folders you used, your recent sessions, the audio delays you measured, how long separations took on your devices, and the options you chose last. These, your last transcription and your last video project are kept in %APPDATA%\com.codedusoleil\Solray Studio.
 
 When Solray is installed from the Microsoft Store, Windows keeps the folders under %LOCALAPPDATA% and %APPDATA% above inside Solray's own package folder, %LOCALAPPDATA%\Packages\CodeduSoleil.SolrayStudio_5s0nx0cn6trmg.
 
