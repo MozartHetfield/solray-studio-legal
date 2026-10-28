@@ -1,6 +1,6 @@
 # Solray Studio Privacy Policy
 
-Effective 28 October 2026. This policy covers Solray Studio 3.0.1 for Windows.
+Effective 27 October 2026. This policy covers Solray Studio 3.1.1 for Windows.
 
 ## Who makes Solray Studio
 
@@ -21,7 +21,7 @@ Solray works on your computer and nowhere else. It has no accounts, no ads and n
 ## What Solray keeps on your computer
 
 - Sessions you save, with their recordings: in Documents\Solray Studio\Sessions, unless you save them somewhere else.
-- Songs you export go where you choose, by default Music\Solray Studio. MIDI files you export go where you choose, by default Documents\Solray Studio\MIDIs. Videos you export go where you choose, by default Documents\Solray Studio\Videos.
+- Songs you export go where you choose, by default Music\Solray Studio. MIDI files you export go where you choose, by default Documents\Solray Studio\MIDIs. Guitar Pro files you export go where you choose, by default Documents\Solray Studio\Tabs. Videos you export go where you choose, by default Documents\Solray Studio\Videos.
 - Stems go to the folder you pick, by default Music\Solray Studio, with a copy of the song they were separated from.
 - Your last transcription in Tabs, with the location of the track it came from.
 - Your last project in Videos: the locations of its video, recording and score, how they are lined up, and how the tab is drawn.
