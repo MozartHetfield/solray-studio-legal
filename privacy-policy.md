@@ -1,6 +1,6 @@
 # Solray Studio Privacy Policy
 
-Effective 27 October 2026. This policy covers Solray Studio 3.1.1 for Windows.
+Effective 29 October 2026. This policy covers Solray Studio 3.2.0 for Windows.
 
 ## Who makes Solray Studio
 
