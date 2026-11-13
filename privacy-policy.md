@@ -1,6 +1,6 @@
 # Solray Studio Privacy Policy
 
-Effective 29 October 2026. This policy covers Solray Studio 3.2.0 for Windows.
+Effective 13 November 2026. This policy covers Solray Studio 4.0.0 for Windows.
 
 ## Who makes Solray Studio
 
@@ -8,19 +8,20 @@ Solray Studio is a free app made by Code du Soleil. In this policy, "we" and "us
 
 ## The short version
 
-Solray works on your computer and nowhere else. It has no accounts, no ads and no analytics, and it never sends what you play, record, open, type or make over the internet. Solray gives us no information about you, and we collect, sell and share none. It downloads only one thing, and only when you ask it to: the training engine, when you press Install in Settings > Models (below).
+Solray works on your computer and nowhere else. It has no accounts, no ads and no analytics, and it never sends what you play, record, open, type or make over the internet. Solray gives us no information about you, and we collect, sell and share none. It goes online for one thing only, and only when you ask it to: to download the training engine, when you press Install in Settings > Models (below).
 
 ## What Solray uses on your computer
 
-- Your audio input: a microphone, an audio interface or another recording device you pick. Sessions, the Tuner, Challenges, Voices and the delay measurement in Settings listen to it while they are on screen; Sessions records from it when you press Record, and Voices when you record a take of your voice. What Solray hears is analysed in memory and then let go; only your recordings are kept, and only on your computer.
+- Your audio input: a microphone, an audio interface or another recording device you pick. Sessions, the Tuner, Challenges, Karaoke, Voices and the delay measurement in Settings listen to it while they are on screen; Sessions records from it when you press Record, and Voices when you record a take of your voice. Karaoke scores your singing as you sing and keeps only the score, never the singing. What Solray hears is analysed in memory and then let go; only your recordings are kept, and only on your computer.
 - Your MIDI keyboard, when one is connected: the notes you play light up and sound in the Visualizer. They are not stored.
-- The files you open: audio files you import, separate, transcribe or convert, MIDI files, videos and Guitar Pro scores, session folders, voice files, and the models you import in Settings. Solray reads them where they are. It copies them only into a session you save, a song into the folder its stems are written to, a voice file into the Voices folder, and an imported model into its own folder (below).
-- What you type: names for sessions, tracks and voices, the words of a spoken take of your voice, and the text you have Solray read aloud in Voices. The text read aloud is not kept: only the speech made from it, and only when you export it.
+- The files you open: audio files you import, separate, transcribe or convert, MIDI files, videos and Guitar Pro scores, lyrics (.lrc files), session folders, voice files, and the models you import in Settings. Solray reads them where they are. It copies them only into a session you save, a song into the folder its stems are written to, a karaoke song's audio into its Karaoke folder, a voice file into the Voices folder, and an imported model into its own folder (below).
+- What you type: names for sessions, tracks and voices, the words of a spoken take of your voice, the text you have Solray read aloud in Voices, and in Karaoke a song's title and artist, its lyrics and the singers' names. The text read aloud is not kept: only the speech made from it, and only when you export it.
 - The names of your audio and MIDI devices, graphics cards and processor, to list them and to choose where Stems and Voices run. They stay on your computer.
 
 ## What Solray keeps on your computer
 
 - Sessions you save, with their recordings: in Documents\Solray Studio\Sessions, unless you save them somewhere else.
+- Karaoke songs: in Documents\Solray Studio\Karaoke, one folder per song, holding copies of its backing track and vocals, the melody Solray found on its vocals, its lyrics, and its best scores with the names the singers typed. Delete a song in Karaoke, or delete its folder. A song you export goes where you choose, as a .solraysong file holding its audio, melody and lyrics, never its scores; one you import is copied into its own folder.
 - Songs you export go where you choose, by default Music\Solray Studio. MIDI files you export go where you choose, by default Documents\Solray Studio\MIDIs. Guitar Pro files you export go where you choose, by default Documents\Solray Studio\Tabs. Videos you export go where you choose, by default Documents\Solray Studio\Videos.
 - Stems go to the folder you pick, by default Music\Solray Studio, with a copy of the song they were separated from.
 - Your last transcription in Tabs, with the location of the track it came from.
@@ -47,9 +48,9 @@ Only the training engine, and only when you press Install (or Repair) in Setting
 
 ## What can leave your computer
 
-Solray itself sends nothing. Two things outside Solray can:
+Solray itself sends nothing but the downloads above, when you ask for them. The store links in Settings > About open the store's page in your browser, only when you click them. Two things outside Solray can:
 
-- Microsoft components. Solray runs its Stems, Tabs and Voices models with ONNX Runtime and DirectML, which are made by Microsoft. Like other parts of Windows, they can record usage events in Windows' own diagnostic data, which Windows sends to Microsoft as far as your choices in Settings > Privacy & security > Diagnostics & feedback allow. These events describe how the components run, not your music, your voice or your files. Microsoft's Privacy Statement covers them: https://privacy.microsoft.com/privacystatement
+- Microsoft components. Solray runs its Stems, Tabs, Karaoke and Voices models with ONNX Runtime and DirectML, which are made by Microsoft. Like other parts of Windows, they can record usage events in Windows' own diagnostic data, which Windows sends to Microsoft as far as your choices in Settings > Privacy & security > Diagnostics & feedback allow. These events describe how the components run, not your music, your voice or your files. Microsoft's Privacy Statement covers them: https://privacy.microsoft.com/privacystatement
 - The Microsoft Store, if you got Solray from it, and Windows' own error reporting. Microsoft runs both, under the same Privacy Statement.
 
 ## Your controls
