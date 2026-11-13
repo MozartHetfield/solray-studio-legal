@@ -1,0 +1,51 @@
+# Solray Studio Privacy Policy
+
+Effective 13 November 2026. This policy covers Solray Studio 4.0.0 for Android.
+
+## Who makes Solray Studio
+
+Solray Studio is a free app made by Code du Soleil. In this policy, "we" and "us" mean Code du Soleil, and "Solray" means the app. You can reach us at codedusoleil@gmail.com.
+
+## The short version
+
+Solray works on your phone or tablet and nowhere else. It has no accounts, no ads and no analytics, and it never sends what you play, sing, open or type over the internet. Solray gives us no information about you, and we collect, sell and share none. It never goes online by itself: the store links in Settings > About open in your browser or the store's app only when you tap them.
+
+## What Solray uses on your device
+
+- Your microphone, or an audio interface or headset plugged in, once you allow it: Android asks the first time. The Tuner, Challenges, Karaoke and the delay measurement in Settings listen to it while they are on screen. Karaoke scores your singing as you sing and keeps only the score, never the singing. What Solray hears is analysed in memory and then let go: Solray records nothing.
+- Your MIDI keyboard, when one is connected: the notes you play light up and sound in the Visualizer. They are not stored.
+- The song files you import into Karaoke (.solraysong files, made by Solray Studio on Windows): Solray copies the song in them into its own storage.
+- What you type: the singers' names in Karaoke.
+
+## What Solray keeps on your device
+
+- Karaoke songs you import: in Solray's own storage, one folder per song, holding its backing track and vocals, the melody of its vocals, its lyrics, a copy of its audio made ready to play, and its best scores with the names the singers typed. Delete a song in Karaoke.
+- Song files you export from Karaoke go where you choose in Android's save dialog. They hold the song's audio, melody and lyrics, not its scores.
+- Your settings: the tuning, sound and volume, the audio delays you measured, your custom practice in Challenges, and the options you chose last.
+
+None of this is sent anywhere. Solray keeps it until you delete it. Uninstalling Solray, or clearing its storage in Android's settings, removes all of it except the song files you exported.
+
+## What can leave your device
+
+Solray itself sends nothing. Two things outside Solray can:
+
+- Google Play, which you got Solray from, and Android's own crash and diagnostics reports, as far as your choices in Android's settings allow. Google runs both, under its own privacy policy: https://policies.google.com/privacy
+- The app or site you share a song file with, when you choose to.
+
+## Your controls
+
+- Android decides whether Solray may use your microphone: Settings > Apps > Solray Studio > Permissions.
+- Solray listens only while a section that needs it is on screen, and lets go of the microphone as soon as you leave the app.
+- Everything Solray keeps is in its own storage, and you can delete what you like.
+
+## Children
+
+Solray collects no personal information from anyone, children included.
+
+## Changes
+
+If Solray starts handling information differently, this policy will change first, with a new effective date at the top. The current version is always in the app, in Settings > About & licences.
+
+## Contact
+
+Questions about this policy or your privacy: codedusoleil@gmail.com
