@@ -1,6 +1,6 @@
 # Solray Studio Privacy Policy
 
-Effective 13 November 2026. This policy covers Solray Studio 4.0.2 for Android.
+Effective 20 November 2026. This policy covers Solray Studio 4.1.0 for Android.
 
 ## Who makes Solray Studio
 
@@ -8,7 +8,7 @@ Solray Studio is a free app made by Code du Soleil. In this policy, "we" and "us
 
 ## The short version
 
-Solray works on your phone or tablet and nowhere else. It has no accounts, no ads and no analytics, and it never sends what you play, sing, open or type over the internet. Solray gives us no information about you, and we collect, sell and share none. It never goes online by itself: the store links in Settings > About open in your browser or the store's app only when you tap them.
+Solray works on your phone or tablet and nowhere else. It has no accounts, no ads and no analytics, and it never sends what you play, sing, open or type over the internet. Solray gives us no information about you, and we collect, sell and share none. It never goes online by itself: the store links in Settings > About & licences open in your browser or the store's app only when you tap them. When you host or join a party in Karaoke, it talks to the other devices on your own Wi-Fi, never to the internet (below).
 
 ## What Solray uses on your device
 
@@ -16,18 +16,32 @@ Solray works on your phone or tablet and nowhere else. It has no accounts, no ad
 - Your MIDI keyboard, when one is connected: the notes you play light up and sound in the Visualizer. They are not stored.
 - The song files you import into Karaoke (.solraysong files, made by Solray Studio on Windows): Solray copies the song in them into its own storage.
 - What you type: the singers' names in Karaoke.
+- Your Wi-Fi, only while you host or join a party in Karaoke (below).
+- Your screen, kept on while the Karaoke is open, as nobody taps the phone mid-song.
 
 ## What Solray keeps on your device
 
-- Karaoke songs you import: in Solray's own storage, one folder per song, holding its backing track and vocals, the melody of its vocals, its lyrics, a copy of its audio made ready to play, and its best scores with the names the singers typed. Delete a song in Karaoke.
+- Karaoke songs you import, or download from a party's host: in Solray's own storage, one folder per song, holding its backing track and vocals, the melody of its vocals, its lyrics, a copy of its audio made ready to play, and its best scores with the names the singers typed. Delete a song in Karaoke. Two songs never share a name: one coming in under a name already there overwrites that song, once you say so.
 - Song files you export from Karaoke go where you choose in Android's save dialog. They hold the song's audio, melody and lyrics, not its scores.
 - Your settings: the tuning, sound and volume, the audio delays you measured, your custom practice in Challenges, and the options you chose last.
 
 None of this is sent anywhere. Solray keeps it until you delete it. Uninstalling Solray, or clearing its storage in Android's settings, removes all of it except the song files you exported.
 
+## Karaoke parties
+
+Only while an online party is on in Karaoke (Create party > Online party), or you join one (Join a party), Solray talks to other devices on your own Wi-Fi, never to the internet. Meanwhile it keeps the screen on and the Wi-Fi out of power saving, which would delay what it sends. The devices that join, phones or computers, are the party's members:
+
+- The device playing the song (the host) listens on your network for members, on ports 47320 and 47321, and answers a device looking for it with its name and a room code. Where your network keeps such questions back, the device asks each address of your own network, on that port only, which Solray is there and with what code; a device with another code is turned away.
+- A member sends the host the name its singer typed, the device's own name, an id made up at random that it keeps (so the host knows it again when it comes back), the delays measured on it, how quick the network is, and what its singer sings as pitch readings: the note heard and how loud, a hundred times a second. Never the sound of the singing.
+- The host sends each member which player it is and when the song plays, and, when everyone sings in their own headphones, the song itself: its lyrics and notes, its backing track and its vocals, which the member keeps among its temporary files (its cache) to play. With them come their fingerprints (SHA-256), so a member uses a copy it already has, of a song of its own or one sent before, only when it is the same to the byte, and turns away one that came through damaged.
+- The host also sends each member the list of its songs (their titles, artists, lengths, languages and singers' names), and any of them a member asks to download, as a song file: its audio, melody and lyrics, never its scores. Only a member that joined with the code is sent a file, and none while a song is being sung (a download waits, then carries on). The member keeps the song among its own songs, as one it imported.
+- The host keeps each member's id with the delay measured for it, among your settings. Nothing else a member sends is kept, and nothing is sent to us or to anyone else.
+
+Anyone on the same network who has the room code can join while an online party is on, as with a shared speaker, and download the host's songs; send a member away from the Setup card, or end the party. Use it on networks you trust, and share songs only where you have the right to.
+
 ## What can leave your device
 
-Solray itself sends nothing. Two things outside Solray can:
+Solray itself sends nothing, but for what is said above to the devices on your own Wi-Fi at a Karaoke party. Two things outside Solray can:
 
 - Google Play, which you got Solray from, and Android's own crash and diagnostics reports, as far as your choices in Android's settings allow. Google runs both, under its own privacy policy: https://policies.google.com/privacy
 - The app or site you share a song file with, when you choose to.
