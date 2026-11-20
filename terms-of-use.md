@@ -1,6 +1,6 @@
 # Solray Studio Terms of Use
 
-Effective 13 November 2026.
+Effective 20 November 2026.
 
 These terms are an agreement between you and Code du Soleil ("we", "us"), who makes Solray Studio ("Solray"). By installing or using Solray you accept them. If you do not accept them, please do not use Solray.
 
@@ -8,15 +8,15 @@ These terms are an agreement between you and Code du Soleil ("we", "us"), who ma
 
 - Solray is free. You may install it on your own computers and use it for any lawful purpose, including making your own music.
 - You may share Solray with others, as long as you share it unchanged and free of charge. Please do not sell it or present it as your own.
-- The parts of Solray made by others are listed in Settings > Licences & credits and in the Third-party notices. They come under their own licences, and nothing in these terms takes away the rights those licences give you.
+- The parts of Solray made by others are listed under Licences & credits in Settings > About & licences, and in the Third-party notices there. They come under their own licences, and nothing in these terms takes away the rights those licences give you.
 
 ## What is ours and what is yours
 
 - Solray, including its code, design, logo, sounds, exercises and documents, is ours, except the parts made by others. Copyright © 2026 Code du Soleil. All rights reserved.
-- What you record, import, separate, transcribe and export is yours, or belongs to whoever owns it. Solray claims no rights in it.
+- What you record, import, download from a Karaoke party, separate, transcribe and export is yours, or belongs to whoever owns it. Solray claims no rights in it. Share songs at a party only where you have the right to.
 - Separation models you import into Solray Stems, the lead and backing vocals model among them, and the reverb removal model Solray Voices uses, are not part of Solray. Use only models you have the right to use, under their own licences.
 - Voice models you import into Solray Voices are not part of Solray either, and come under their own licences, which may not allow commercial use (OmniVoice's do not).
-- The training engine Solray installs when you ask it to (Python, PyTorch with NVIDIA's CUDA, and the packages and pretrained weights the trainer needs) is not part of Solray: it comes under its components' own licences, listed in Settings > Licences & credits.
+- The training engine Solray installs when you ask it to (Python, PyTorch with NVIDIA's CUDA, and the packages and pretrained weights the trainer needs) is not part of Solray: it comes under its components' own licences, listed under Licences & credits in Settings > About & licences.
 - A voice model you train in Solray Voices is made from your recordings. It is yours, as far as the voice in it is yours to use.
 - You are responsible for having the right to use the music you bring into Solray. Separating or transcribing a song you do not own is for your own practice and study; publishing the stems, tabs or MIDI files of someone else's song can need their permission.
 - Lyrics you write, paste or import for a karaoke song belong to whoever wrote the song. They are for your own singing; publishing them can need the songwriter's permission.
@@ -47,7 +47,7 @@ As far as the law allows, we are not liable for any loss or damage that comes fr
 
 ## Changes and ending
 
-We may update these terms. The version in the app, in Settings > Documents, is the one that applies to that version of Solray. You can stop using Solray at any time by uninstalling it.
+We may update these terms. The version in the app, under Documents in Settings > About & licences, is the one that applies to that version of Solray. You can stop using Solray at any time by uninstalling it.
 
 ## Microsoft Store
 
