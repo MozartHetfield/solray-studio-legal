@@ -1,6 +1,6 @@
 # Solray Studio Privacy Policy
 
-Effective 13 November 2026. This policy covers Solray Studio 4.0.2 for Windows.
+Effective 20 November 2026. This policy covers Solray Studio 4.1.0 for Windows.
 
 ## Who makes Solray Studio
 
@@ -8,7 +8,7 @@ Solray Studio is a free app made by Code du Soleil. In this policy, "we" and "us
 
 ## The short version
 
-Solray works on your computer and nowhere else. It has no accounts, no ads and no analytics, and it never sends what you play, record, open, type or make over the internet. Solray gives us no information about you, and we collect, sell and share none. It goes online for one thing only, and only when you ask it to: to download the training engine, when you press Install in Settings > Models (below).
+Solray works on your computer and nowhere else. It has no accounts, no ads and no analytics, and it never sends what you play, record, open, type or make over the internet. Solray gives us no information about you, and we collect, sell and share none. It goes online for one thing only, and only when you ask it to: to download the training engine, when you press Install in Settings > Models (below). When you host or join a party in Karaoke, it talks to the other devices on your own network, never to the internet (below).
 
 ## What Solray uses on your computer
 
@@ -21,7 +21,7 @@ Solray works on your computer and nowhere else. It has no accounts, no ads and n
 ## What Solray keeps on your computer
 
 - Sessions you save, with their recordings: in Documents\Solray Studio\Sessions, unless you save them somewhere else.
-- Karaoke songs: in Documents\Solray Studio\Karaoke, one folder per song, holding copies of its backing track and vocals, the melody Solray found on its vocals, its lyrics, and its best scores with the names the singers typed. Delete a song in Karaoke, or delete its folder. A song you export goes where you choose, as a .solraysong file holding its audio, melody and lyrics, never its scores; one you import is copied into its own folder.
+- Karaoke songs: in Documents\Solray Studio\Karaoke, one folder per song, holding copies of its backing track and vocals, the melody Solray found on its vocals, its lyrics, and its best scores with the names the singers typed. Delete a song in Karaoke, or delete its folder. A song you export goes where you choose, as a .solraysong file holding its audio, melody and lyrics, never its scores; one you import, or download from a party's host, is copied into its own folder. Two songs never share a name: one coming in under a name already there overwrites that song, once you say so.
 - Songs you export go where you choose, by default Music\Solray Studio. MIDI files you export go where you choose, by default Documents\Solray Studio\MIDIs. Guitar Pro files you export go where you choose, by default Documents\Solray Studio\Tabs. Videos you export go where you choose, by default Documents\Solray Studio\Videos.
 - Stems go to the folder you pick, by default Music\Solray Studio, with a copy of the song they were separated from.
 - Your last transcription in Tabs, with the location of the track it came from.
@@ -42,13 +42,25 @@ A recording of someone's voice is personal information about them. By saving a v
 
 A voice never leaves your computer unless you export it into a file yourself (Export voice…), to take it to another computer. That file holds its recordings and its trained model, so keep it as safe as the voice. A voice file you import from someone else is kept like your own, and the same care applies. Delete a voice in the Voices section, or delete its folder.
 
+## Karaoke parties
+
+Only while an online party is on in Karaoke (Create party > Online party), or you join one (Join a party), Solray talks to other devices on your own local network (your Wi-Fi or your home's wired network), never to the internet. The devices that join, phones or computers, are the party's members:
+
+- The device playing the song (the host) listens on your network for members, on ports 47320 and 47321, and answers a device looking for it with its name and a room code. Where your network keeps such questions back, the device asks each address of your own network, on that port only, which Solray is there and with what code; a device with another code is turned away. Windows asks once whether Solray may do so.
+- A member sends the host the name its singer typed, the device's own name, an id made up at random that it keeps (so the host knows it again when it comes back), the delays measured on it, how quick the network is, and what its singer sings as pitch readings: the note heard and how loud, a hundred times a second. Never the sound of the singing.
+- The host sends each member which player it is and when the song plays, and, when everyone sings in their own headphones, the song itself: its lyrics and notes, its backing track and its vocals, which the member keeps among its temporary files to play (on a computer, in %TEMP%\Solray party songs). With them come their fingerprints (SHA-256), so a member uses a copy it already has, of a song of its own or one sent before, only when it is the same to the byte, and turns away one that came through damaged.
+- The host also sends each member the list of its songs (their titles, artists, lengths, languages and singers' names), and any of them a member asks to download, as a song file: its audio, melody and lyrics, never its scores. Only a member that joined with the code is sent a file, and none while a song is being sung (a download waits, then carries on). The member keeps the song among its own songs, as one it imported.
+- The host keeps each member's id with the delay measured for it, among your settings. Nothing else a member sends is kept, and nothing is sent to us or to anyone else.
+
+Anyone on the same network who has the room code can join while an online party is on, as with a shared speaker, and download the host's songs; send a member away from the Setup card, or end the party. Use it on networks you trust, and share songs only where you have the right to.
+
 ## What Solray downloads
 
 Only the training engine, and only when you press Install (or Repair) in Settings > Models. It downloads uv and Python from github.com, PyTorch with NVIDIA's CUDA from download.pytorch.org, the trainer's other packages from pypi.org, and the pretrained weights from huggingface.co, and checks every file against the one it expects. When Python cannot be downloaded, it uses a Python 3.11 already installed on your computer instead. Files you give it with Import files… are copied from the folder you pick, and only the training engine's own files are taken from it: a file there is read only when it is the size of one of them, to compare its contents, and nothing else is kept or sent. As with any download, those sites see your IP address and the files asked for; Solray sends them nothing else, nothing about you, your voice or your files. Nothing is downloaded at any other time, and a training never connects to anything.
 
 ## What can leave your computer
 
-Solray itself sends nothing but the downloads above, when you ask for them. The store links in Settings > About open the store's page in your browser, only when you click them. Two things outside Solray can:
+Solray itself sends nothing but the downloads above, when you ask for them, and, at a Karaoke party, what is said above, only to the devices on your own network. The store links in Settings > About & licences open the store's page in your browser, only when you click them. Two things outside Solray can:
 
 - Microsoft components. Solray runs its Stems, Tabs, Karaoke and Voices models with ONNX Runtime and DirectML, which are made by Microsoft. Like other parts of Windows, they can record usage events in Windows' own diagnostic data, which Windows sends to Microsoft as far as your choices in Settings > Privacy & security > Diagnostics & feedback allow. These events describe how the components run, not your music, your voice or your files. Microsoft's Privacy Statement covers them: https://privacy.microsoft.com/privacystatement
 - The Microsoft Store, if you got Solray from it, and Windows' own error reporting. Microsoft runs both, under the same Privacy Statement.
